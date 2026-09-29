@@ -62,7 +62,7 @@ pipeline{
         }
         stage("TRIVY"){
             steps{
-                sh "trivy image nehudockerhub/swiggy:latest > trivy.txt" 
+                sh "trivy image nehrudockerhub/swiggy:latest > trivy.txt" 
             }
         }
         stage('Deploy to container'){
